@@ -439,7 +439,7 @@
                     </div>
                     <div class="cart__td cart__td_style">$150</div>
                     <div class="cart__td cart__td_style cart__td_q"><div  class="cart__q">2</div></div>
-                    <div class="cart__td" cart__td_style>free</div>
+                    <div class="cart__td cart__td_style">free</div>
                     <div class="cart__td cart__td_style">$300</div>
                     <div class="cart__td">
                             <img src="img/Cart_drop/ex.png" alt="delete" class="">
@@ -495,23 +495,23 @@
         <div class="cart__payment">
             <div class="cart__paym">
                 <h3 class="cart__paym_h3">Shipping Adress</h3>
-                <form class="cart__paym_form" action="put">
+                <form class="cart__paym_form" action="get">
                     <label for="city"></label>
-                    <input type="text" class="cart__paym_input" placeholder="Bangladesh" name="city">
+                    <input type="text" class="cart__paym_input" placeholder="Bangladesh" id="city">
                     <img src="img/Product-page/triangle-down.png" alt="triangle" class="cart__paym_arrow">
                     <label for="state"></label>
-                    <input type="text" class="cart__paym_input" placeholder="State" name="state">
+                    <input type="text" class="cart__paym_input" placeholder="State" id="state">
                     <label for="zip"></label>
-                    <input type="text" class="cart__paym_input" placeholder="Postcode / Zip" name="zip">
+                    <input type="text" class="cart__paym_input" placeholder="Postcode / Zip" id="zip">
                     <a href="#" class="cart__paym_button">get a quote</a>
                 </form>
             </div>
             <div class="cart__paym">
                 <h3 class="cart__paym_h3">coupon  discount</h3>
                 <p class="cart__paym_p">Enter your coupon code if you have one</p>
-                <form action="put">
+                <form action="get">
                    <label for="state2"></label>
-                    <input type="text" class="cart__paym_input cart__paym_input-marg" placeholder="State" name="state2">
+                    <input type="text" class="cart__paym_input cart__paym_input-marg" placeholder="State" id="state2">
                     <a href="#" class="cart__paym_button">Apply coupon</a>
                 </form>
             </div>
