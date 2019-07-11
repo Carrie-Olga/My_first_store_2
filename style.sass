@@ -1,0 +1,1721 @@
+$color-site: #f16d7f
+
+*
+  margin: 0
+  padding: 0
+
+a
+  text-decoration: none
+
+input
+  border: none
+
+body
+  font-family: 'Lato', sans-serif
+
+/*Page Index*/
+
+.header
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.17)
+  border: 1px solid #ececec
+  background-color: #ffffff
+  height: 100px
+
+  &__content
+    display: flex
+    justify-content: space-between
+    height: 100%
+
+  &__block
+    display: flex
+    align-items: center
+    position: relative
+
+
+
+  &__cart
+    margin-right: 26px
+
+.container
+  width: 1140px
+  margin: 0 auto
+
+.form
+  display: flex
+  align-items: center
+  margin-left: 37px
+  font-size: 14px
+  color: #222222
+
+  &__browse
+    border-radius: 3px 0 0 3px
+    border: 1px solid #e6e6e6
+    background-color: #cdcdcc
+    background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%)
+    height: 38px
+    line-height: 38px
+    padding-left: 15px
+    padding-right: 26px
+    position: relative
+
+    &_a
+      color: #222222
+      font-weight: 300
+      letter-spacing: 0.35px
+
+    &:hover .drop_browse
+      display: block
+      position: absolute
+      left: -1px
+      z-index: 9999
+
+  &__search
+    border-radius: 0 3px 3px 0
+    border: 1px solid #e6e6e6
+    background-color: #ffffff
+    height: 38px
+    line-height: 38px
+    width: 317px
+    display: flex
+    justify-content: flex-start
+    border-left: none
+    color: #a4a4a4
+    font-size: 14px
+    font-weight: 300
+    letter-spacing: 0.35px
+
+    &_input
+      width: 100%
+      padding-left: 16px
+
+    &_button
+      padding-right: 11px
+      padding-left: 11px
+      border-left: 1px solid #e6e6e6
+
+.logo
+  color: #222222
+  font-size: 27px
+  font-weight: 300
+  text-transform: uppercase
+  display: flex
+  align-items: center
+
+  &_d
+    font-weight: 400
+    letter-spacing: 0.68px
+    color: $color-site
+
+  &__img
+    margin-right: 13px
+
+  & img:first-of-type
+    margin-left: 5px
+
+.button
+  background-color: $color-site
+  color: #ffffff
+  font-size: 15px
+  font-weight: 400
+  letter-spacing: 0.38px
+  height: 38px
+  padding-right: 19px
+  padding-left: 19px
+  line-height: 38px
+
+.menu
+  display: flex
+  list-style-type: none
+  height: 51px
+  justify-content: center
+  align-items: center
+
+  &__link
+    color: #222222
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    padding: 20px
+    display: block
+
+  &__list
+    position: relative
+
+    &:hover .drop_mega
+      display: flex
+
+.drop
+  border-radius: 5px
+  background-color: #ffffff
+  padding: 12px 20px 20px 20px
+  border: 1px solid #ececec
+
+  &::before
+    content: ''
+    width: 9px
+    height: 9px
+    background-color: #fff
+    display: block
+    position: absolute
+    top: -6px
+    left: 60px
+    transform: rotate(45deg)
+    border-top: 1px solid #ececec
+    border-left: 1px solid #ececec
+
+  &_cart::before
+    content: ''
+    width: 9px
+    height: 9px
+    background-color: #fff
+    display: block
+    position: absolute
+    top: -6px
+    left: 26px
+    transform: rotate(45deg)
+    border-top: 1px solid #ececec
+    border-left: 1px solid #ececec
+
+  &__ul
+    list-style-type: none
+    padding-left: 5px
+    line-height: 30px
+
+  &__link
+    text-decoration: none
+    color: #646464
+    font-size: 14px
+    font-weight: 400
+    letter-spacing: 0.35px
+    line-height: 28px
+
+  &__h3
+    color: #232323
+    font-size: 14px
+    font-weight: 400
+    text-transform: uppercase
+    letter-spacing: 0.35px
+    border-bottom: 1px solid #e8e8e8
+    padding-bottom: 8px
+    padding-top: 8px
+    line-height: 15px
+
+    &_margin
+      margin-top: 30px
+
+  &__flex
+    width: 235px
+    margin-right: 46px
+
+    & .drop__h3:nth-child(2)
+      margin-top: 20px
+
+    &:last-of-type
+      margin-right: 0
+
+  &__browse
+    width: 262px
+
+  &_browse
+    display: none
+
+  &_mega
+    position: absolute
+    top: 46px
+    display: none
+
+  &_cart
+    display: none
+    position: absolute
+    width: 222px
+    z-index: 9999
+    top: 80px
+    left: -14px
+    padding-top: 20px
+
+  &__cart_item
+    display: flex
+    border-bottom: 1px solid #ededed
+    margin-bottom: 16px
+
+    &:last-of-type
+      margin-bottom: 19px
+
+  &__flex_img
+    margin-top: 12px
+
+.header__cart_hover
+  display: flex
+  height: 100%
+  align-items: center
+
+  &:hover .drop_cart
+    display: block
+
+.cart__item
+  margin-right: 14px
+  margin-bottom: 16px
+
+  &_header
+    color: #222222
+    font-size: 12px
+    font-weight: 700
+    text-transform: uppercase
+
+  &_quantity
+    color: $color-site
+    font-weight: 400
+    text-transform: uppercase
+    font-size: 10px
+
+  &_info
+    width: 114px
+    margin-bottom: 10px
+    padding-top: 5px
+
+  &_stars
+    margin-top: 6px
+    margin-bottom: 7px
+
+  &_delete
+    display: flex
+    align-items: center
+
+  &_total
+    display: flex
+    justify-content: space-between
+
+  &_total_line
+    color: #222222
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+
+.cart__drop_button
+  width: 100%
+  height: 12px
+  line-height: 12px
+  display: block
+  border: 1px solid #eaeaea
+  background-color: #fff
+  color: #4a4a4a
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
+  text-align: center
+  padding:  19px 0
+  margin-top: 25px
+
+  &:first-of-type
+    margin-bottom: 11px
+
+  &:last-of-type
+    margin-top: 11px
+
+  &:hover
+    border: 1px solid $color-site
+    color: $color-site
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+
+.promo
+  height: 613px
+  background-color: #e8e8e8
+
+  &__content
+    background-image: url(img/promo.jpg)
+    height: 100%
+    display: flex
+    align-items: center
+    background-position: 0 -52px
+
+  &__h3
+    color: #222222
+    font-weight: 700
+    text-transform: uppercase
+    font-size: 60px
+    letter-spacing: 1px
+    line-height: 45px
+    margin-bottom: 15px
+
+  &__h4
+    color: #222222
+    font-size: 40px
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 1px
+    line-height: 33px
+
+  &__text_fashion
+    color: $color-site
+    letter-spacing: 1px
+
+  &__text
+    border-left: 11px solid $color-site
+    padding-left: 12px
+
+.offer
+  display: flex
+  justify-content: space-between
+  margin-top: 98px
+  padding-bottom: 100px
+
+  &__item
+    background-color: #dadad2
+    width: 560px
+
+    &:first-of-type
+      margin-bottom: 20px
+
+    &_big
+      height: 542px
+
+    &_mini
+      height: 261px
+
+    &_big_1
+      background-image: url(img/offer1.jpg)
+
+    &_big_2
+      background-image: url(img/offer4.jpg)
+
+    &_mini_1
+      background-image: url(img/offer2.jpg)
+      background-repeat: no-repeat
+      background-position: 150px 0
+
+    &_mini_2
+      background-image: url(img/offer3.jpg)
+
+  &__text
+    background-color: #ffffff
+    padding: 16px 20px
+    border: 1px solid #e6e6e6
+    display: inline-block
+    margin-top: 26px
+
+    &_h5
+      color: #222222
+      font-size: 18px
+      font-weight: 700
+      text-transform: uppercase
+      letter-spacing: 0.45px
+
+    &_h4
+      font-weight: 700
+      text-transform: uppercase
+      color: $color-site
+      font-size: 30px
+      letter-spacing: 0.75px
+
+.featured
+  text-align: center
+
+  &__h6
+    color: #9f9f9f
+    font-size: 14px
+    font-weight: 400
+    letter-spacing: 0.35px
+    line-height: 15px
+
+  &__h4
+    color: #222222
+    font-size: 30px
+    font-weight: 700
+    letter-spacing: 0.75px
+    line-height: 25px
+    margin-bottom: 16px
+
+.box-product
+  margin-top: 63px
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+.product
+  width: 263px
+  margin-bottom: 39px
+  position: relative
+
+  &:hover .product__add
+    display: block
+
+  &:hover
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+
+  &:hover .product__img
+    filter: brightness(50%)
+
+  &__name
+    color: #222222
+    font-size: 13px
+    font-weight: 400
+    text-transform: uppercase
+    display: block
+    margin-bottom: 17px
+
+  &__price
+    color: $color-site
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+
+  &__content
+    padding: 20px 15px
+
+  &__img
+    width: 100%
+    &_p
+      line-height: 39px
+      margin-right: 8px
+      vertical-align: middle
+
+      &_refresh
+        width: 57px
+        height: 38px
+        display: block
+        border: 1px solid #ffffff
+        text-align: center
+        line-height: 39px
+
+      &_hart
+        line-height: 39px
+        margin-right: 8px
+        vertical-align: middle
+
+      &_like
+        width: 57px
+        height: 38px
+        display: block
+        border: 1px solid #ffffff
+        text-align: center
+        line-height: 39px
+
+      &_cart
+        line-height: 39px
+        margin-right: 8px
+        vertical-align: middle
+
+    &_1
+      background-color: #e9e9e9
+
+    &_h
+      height: 280px
+      width: auto
+      display: block
+      margin-left: auto
+      margin-right: auto
+
+  &__add
+    width: 123px
+    height: 39px
+    display: none
+    border: 1px solid #ffffff
+    text-align: center
+    line-height: 39px
+    font-size: 13px
+    font-weight: 700
+    color: #ffffff
+    position: absolute
+    top: 98px
+    left: 70px
+
+    &_p
+      width: 123px
+      height: 39px
+      border: 1px solid #ffffff
+      text-align: center
+      line-height: 39px
+      font-size: 13px
+      font-weight: 700
+      color: #ffffff
+      position: absolute
+      top: 98px
+      left: 70px
+      display: none
+
+  &__a_bg
+    display: block
+    background-color: #e9e9e9
+
+.product__item_hover
+  width: 125px
+  position: absolute
+  top: 145px
+  left: 70px
+  justify-content: space-between
+  display: none
+
+.product:hover .product__item_hover
+  display: flex
+
+.product:hover .product__add_p
+  display: block
+
+
+.products__button
+  justify-content: center
+  margin-bottom: 113px
+  margin-top: 20px
+
+.button2
+  background-color: $color-site
+  color: #ffffff
+  font-size: 16px
+  font-weight: 700
+  letter-spacing: 0.4px
+  height: 48px
+  padding-right: 19px
+  padding-left: 19px
+  line-height: 48px
+
+.options
+  display: flex
+  height: 529px
+  margin-bottom: 97px
+
+  &__item1
+    width: 767px
+    background-color: #ccc
+    background-image: url(img/winter.jpg)
+
+  &__item
+    width: 294px
+    height: 102px
+    margin-bottom: 52px
+    position: relative
+
+    &_text
+      color: #fbfbfb
+      font-size: 14px
+      font-weight: 300
+      letter-spacing: 0.25px
+      line-height: 25px
+
+    &_header
+      color: #fbfbfb
+      font-size: 20px
+      font-weight: 700
+      letter-spacing: 0.5px
+      line-height: 35px
+
+  &__aside
+    flex-direction: column
+    padding-left: 36px
+    padding-right: 43px
+    padding-top: 48px
+    background-color: #222224
+
+  &__h3
+    color: #ffffff
+    font-size: 54px
+    font-weight: 700
+    text-transform: uppercase
+    margin-bottom: 15px
+    line-height: 42px
+    letter-spacing: 1.5px
+
+  &__h4
+    color: #ffffff
+    font-weight: 700
+    text-transform: uppercase
+    font-size: 32px
+    letter-spacing: 0.9px
+    line-height: 25px
+
+  &__text
+    padding-left: 39px
+    padding-top: 146px
+
+    &_offer
+      font-size: 54px
+      font-weight: 700
+      text-transform: uppercase
+      letter-spacing: 1.5px
+      color: $color-site
+
+  &__text2
+    padding-left: 73px
+
+  &__article_car
+    position: absolute
+    top: 0
+
+.subscribe
+  background-image: url('img/subscr-b.jpg')
+  height: 438px
+  margin-bottom: 109px
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+
+  &__container
+    display: flex
+    height: 100%
+
+  &__item
+    position: relative
+    height: 100%
+    width: 570px
+    line-height: 30px
+
+    &_text
+      padding-top: 115px
+      padding-left: 111px
+      padding-right: 30px
+
+  &__quote
+    color: #222224
+    font-size: 16px
+    font-style: italic
+    font-weight: 700
+    letter-spacing: 0.4px
+    margin-bottom: 5px
+
+  &__span
+    color: $color-site
+    font-size: 16px
+    font-weight: 700
+    letter-spacing: 0.4px
+    font-style: normal
+
+  &__p
+    font-style: normal
+    color: #222224
+    font-size: 12px
+    font-weight: 300
+    letter-spacing: 0.3px
+    line-height: 15px
+
+  &__p1
+    line-height: 20px
+
+  &__face
+    position: absolute
+    top: 111px
+
+  &__lines
+    display: flex
+
+    &_form
+      margin-right: 13px
+      margin-top: 41px
+      width: 38px
+
+  &__header
+    text-align: center
+    color: #222224
+    font-weight: 400
+    font-size: 24px
+    letter-spacing: 0.6px
+    text-transform: uppercase
+    line-height: 22px
+    margin-bottom: 10px
+
+    &_text
+      text-align: center
+      color: #222224
+      font-size: 14px
+      font-weight: 400
+      line-height: 14px
+      text-transform: uppercase
+      letter-spacing: 0.35px
+
+  &__form
+    height: 100%
+    padding-top: 148px
+
+  &__submit
+    text-align: center
+    margin-top: 35px
+
+    &_button
+      width: 104px
+      height: 46px
+      position: absolute
+      margin-left: -5px
+      border-radius: 0 23px 23px 0
+      background-color: $color-site
+      color: #ffffff
+      font-size: 14px
+      font-weight: 400
+      letter-spacing: 0.35px
+      right: 75px
+
+  &__email
+    height: 46px
+    line-height: 46px
+    width: 400px
+    border-radius: 23px 0 0 23px
+    background-color: #e1e1e1
+    color: #222224
+    font-size: 14px
+    font-weight: 400
+    letter-spacing: 0.35px
+
+.footer
+  min-height: 400px
+
+  &__rights
+    height: 79px
+    background-color: #e6e6e6
+
+  &__brand
+    width: 435px
+    margin-right: 64px
+
+    & p:first-of-type
+      margin-top: 25px
+
+  &__company
+    width: 231px
+
+  &__info
+    display: flex
+    padding-bottom: 60px
+
+  &__shop
+    width: 193px
+
+  &__information
+    width: 224px
+
+  &__header
+    color: $color-site
+    font-size: 18px
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 0.45px
+    line-height: 30px
+
+    &_company-nav
+      color: #898989
+      font-size: 16px
+      font-weight: 400
+      letter-spacing: 0.4px
+      margin-top: 35px
+
+  &__p
+    color: #898989
+    font-size: 14px
+    font-weight: 300
+    letter-spacing: 0.35px
+    line-height: 25px
+    margin-bottom: 20px
+    display: block
+
+  &__img
+    margin-left: 0 !important
+
+
+  &__nav
+    list-style-type: none
+
+    &_li
+      line-height: 40px
+
+      & a
+        color: #898989
+        font-size: 16px
+        font-weight: 400
+        letter-spacing: 0.4px
+
+  &__l_p
+    color: #7a7a7a
+    font-size: 16px
+    font-weight: 400
+    letter-spacing: 0.4px
+
+  &__rights
+    background-color: #e6e6e6
+    line-height: 79px
+
+    &_internal
+      display: flex
+      justify-content: space-between
+
+  &__r
+    display: flex
+    justify-content: space-around
+    align-items: center
+    width: 191px
+
+    &_a
+      width: 32px
+      height: 32px
+      line-height: 32px
+      background-color: #fff
+      position: relative
+
+      &-fb
+        text-align: center
+        color: #b2b2b2
+
+        &:hover
+          background-color: $color-site
+          color: #f7f7f8
+
+      &-tw
+        text-align: center
+        color: #b2b2b2
+
+        &:hover
+          background-color: $color-site
+          color: #f7f7f8
+
+      &-in
+        text-align: center
+        color: #b2b2b2
+
+        &:hover
+          background-color: $color-site
+          color: #f7f7f8
+
+      &-p
+        text-align: center
+        color: #b2b2b2
+
+        &:hover
+          background-color: $color-site
+          color: #f7f7f8
+
+      &-g
+        text-align: center
+        color: #b2b2b2
+
+        &:hover
+          background-color: $color-site
+          color: #f7f7f8
+
+
+/*End of page Index*/
+
+.new__arrivals
+  background-color: #f8f3f4
+  margin-bottom: 59px
+
+  &_cont
+    display: flex
+    justify-content: space-between
+    line-height: 148px
+
+  &_1
+    color: $color-site
+    font-size: 24px
+    font-weight: 400
+    text-transform: uppercase
+
+  &_2
+    font-size: 14px
+    text-transform: uppercase
+    color: #636363
+    font-weight: 300
+
+  &_3
+    color: $color-site
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+
+  &_single
+    margin-bottom: 0
+
+.store__info
+  background-color: #222224
+  height: 341px
+
+  &_main
+    display: flex
+    height: 100%
+    justify-content: space-around
+
+    &-p
+      position: relative
+      text-align: center
+      width: 310px
+
+      &-p
+        margin-top: 143px
+
+      &-car
+        position: absolute
+        top: 89px
+        left: 135px
+
+.nav
+  margin-bottom: 110px
+
+  &__flex
+    display: flex
+    justify-content: space-between
+
+  &__drop
+    width: 243px
+
+    &_header
+      border-bottom: 1px solid #ebebeb
+      line-height: 37px
+      border-left: 5px solid #ef5b70
+      padding-left: 11px
+      margin-bottom: 18px
+
+      &-triangle-down
+        position: absolute
+        top: 12px
+        right: 8px
+
+      &:active .nav__list
+        display: block
+
+      &-triangle-up
+        position: absolute
+        top: 15px
+        right: 5px
+
+      &-a
+        display: block
+        color: #6f6e6e
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+        position: relative
+
+  &__list
+    display: block
+
+    &_ul
+      list-style-type: none
+
+      &-li
+        padding-left: 17px
+        line-height: 33px
+
+        &-a
+          color: #6f6e6e
+          font-size: 14px
+          font-weight: 400
+
+      & li:last-of-type
+        margin-bottom: 30px
+
+.active
+  color: #ef5b70
+
+.product__select
+  width: 847px
+  margin-bottom: 10px
+
+  &_details
+    display: flex
+    justify-content: space-between
+
+    &-w
+      width: 248px
+      padding-right: 15px
+      padding-bottom: 5px
+
+      &:last-of-type
+        padding-right: 0
+
+
+    &-range
+      display: flex
+      justify-content: space-between
+
+      &-text
+        color: #6f6e6e
+        font-size: 14px
+        font-weight: 400
+
+      &-input
+        margin-bottom: 15px
+        width: 100%
+
+    &-header
+      color: #6f6e6e
+      font-size: 14px
+      font-weight: 700
+      text-transform: uppercase
+      line-height: 37px
+      margin-bottom: 10px
+
+    &-selector
+      display: flex
+      flex-wrap: wrap
+
+      &-a
+        color: #6f6e6e
+        font-size: 14px
+        font-weight: 400
+        display: block
+        padding-right: 15px
+        padding-left: 15px
+        border-right: 1px solid #dfdfdf
+
+      & a:first-of-type
+        padding-left: 0
+
+  &_checkbox
+    color: #6f6e6e
+    font-size: 14px
+    font-weight: 400
+    text-transform: uppercase
+    display: flex
+    flex-wrap: wrap
+
+    &-form
+      margin-left: 20px
+      margin-bottom: 17px
+      margin-right: 4px
+
+      &:first-of-type
+        margin-left: 0
+
+  &_sort
+    background-color: #f3f3f3
+    height: 31px
+    margin-top: 25px
+    padding: 10px
+    color: #6f6e6e
+    font-size: 14px
+    font-weight: 400
+    display: flex
+    position: relative
+    margin-bottom: 48px
+
+    &-by
+      height: 29px
+      background-color: #ffffff
+      line-height: 29px
+      padding-left: 10px
+      border: 1px solid #ebebeb
+      padding-right: 10px
+
+      &-drop
+        color: #6f6e6e
+        font-size: 14px
+        font-weight: 400
+        display: block
+        height: 29px
+        background-color: #ffffff
+        line-height: 29px
+        padding-left: 10px
+        border-top: 1px solid #ebebeb
+        border-right: 1px solid #ebebeb
+        border-bottom: 1px solid #ebebeb
+        padding-right: 35px
+        margin-right: 10px
+        position: relative
+
+  &_slider
+    display: flex
+    justify-content: space-between
+
+    &-l
+      border-radius: 3px
+      border: 1px solid #ebebeb
+      background-color: #ffffff
+      height: 44px
+      line-height: 44px
+      display: flex
+      padding: 0 16px
+      width: 231px
+      justify-content: space-between
+
+      &-list
+        list-style-type: none
+        display: flex
+        justify-content: space-between
+
+        & li:first-of-type
+          margin-left: 16px
+
+      &-a
+        color: #c4c4c4
+        font-size: 16px
+        font-weight: bold
+        margin-right: 17px
+
+    &-img
+      width: 8px
+      height: 13px
+      margin-top: 15px
+
+    &-viewall
+      height: 44px
+      line-height: 44px
+      border-radius: 3px
+      border: 1px solid #ef5b70
+      background-color: #ffffff
+      color: #ef5b70
+      font-size: 16px
+      font-weight: bold
+      padding: 12px 46px
+
+.active_li
+  color: #ef5b70
+
+.select__flex
+  display: flex
+  margin-bottom: 10px
+
+.product__products
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+/*End of page Product*/
+
+/*Page Single Item*/
+
+.single__img
+  height: 730px
+  line-height: 730px
+  border: 1px solid #eaeaea
+  background-color: #f7f7f7
+  display: flex
+  align-items: center
+
+  &_m
+    display: block
+    margin-left: auto
+    margin-right: auto
+
+  &_arrow
+    width: 47px
+    height: 47px
+    background-color: #cdcdcc
+    display: flex
+    align-items: center
+    justify-content: center
+
+
+.single
+  position: relative
+  background-color: #ffffff
+  padding-top: 830px
+
+  &__cont
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    padding-top: 73px
+    padding-bottom: 122px
+    margin-bottom: 70px
+    position: absolute
+    left: 50%
+    margin-left: -33%
+    top: -50px
+
+  &__info
+    width: 622px
+    padding-left: 10px
+    padding-right: 10px
+    margin: 0 auto
+
+    &_h4
+      color: $color-site
+      font-family: Lato
+      font-size: 14px
+      font-weight: 700
+      line-height: 13px
+      text-transform: uppercase
+
+    &_h3
+      color: #4d4d4d
+      font-family: "Lato - Black"
+      font-size: 18px
+      font-weight: 400
+      line-height: 14px
+      text-transform: uppercase
+      margin-bottom: 67px
+
+    &_center
+      text-align: center
+
+    &_slider
+      margin: 14px auto 17px
+      width: 147px
+      height: 1px
+      background-color:  #eaeaea
+      position: relative
+
+      &-active
+        margin: 0 auto
+        width: 63px
+        height: 3px
+        background-color: #ef5b70
+        position: absolute
+        top: -1.5px
+        left: 43px
+
+    &_text
+      line-height: 30px
+      text-align: center
+      color: #5e5e5e
+      font-family: Lato
+      font-size: 14px
+      font-weight: 300
+      margin-bottom: 26px
+
+    &_material
+      height: 10px
+      display: flex
+      justify-content: space-around
+      margin-bottom: 37px
+
+      &-h3
+        color: #b9b9b9
+        font-family: Lato
+        font-size: 14px
+        font-weight: 700
+        line-height: 10px
+        text-transform: uppercase
+
+      &-span
+        font-family: Lato
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+        color: #2f2f2f
+
+    &_h2
+      color: #ef5b70
+      font-family: Lato
+      font-size: 24px
+      font-weight: 700
+      line-height: 24px
+      text-align: center
+      display: block
+      border-bottom: 1px solid #eaeaea
+      padding-bottom: 43px
+      margin-bottom: 63px
+
+    &_choose
+      display: flex
+      justify-content: space-around
+      width: 537px
+      margin: 0 auto
+
+      &-box
+        width: 145px
+        height: 62px
+        position: relative
+
+      &-boxchoose
+        color: #2f2f2f
+        font-family: Lato
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+        line-height: 12px
+        margin-bottom: 16px
+
+      &-area
+        width: 121px
+        height: 11px
+        border: 1px solid #eaeaea
+        padding: 12px 9px 12px 14px
+        display: flex
+
+      &-areared
+        width: 12px
+        height: 12px
+        background-color: #ef5b70
+        margin-right: 11px
+
+      &-areatext
+        color: #bcbcbc
+        font-family: Lato
+        font-size: 13px
+        font-weight: 400
+        line-height: 14px
+        display: block
+        margin-right: 66px
+
+      &-area-arrow_down
+        width: 9px
+        height: 5px
+        position: absolute
+        right: 10px
+        top: 45px
+
+    &_add-cart
+      height: 25px
+      width: 537px
+      margin: 28px auto 0
+      padding-top: 15px
+      padding-bottom: 15px
+      text-align: center
+      line-height: 25px
+      vertical-align: middle
+      border: 1px solid #ef5b70
+      color: #ef5b70
+      font-family: Lato
+      font-size: 16px
+      font-weight: 700
+
+    &_red-cart
+      margin-right: 15px
+
+  &__also
+    display: flex
+    justify-content: space-between
+    padding-top: 72px
+    padding-bottom: 43px
+
+  &__h3_2
+    color: #4d4d4d
+    font-family: "Lato - Black"
+    font-size: 24px
+    font-weight: 400
+    line-height: 20px
+    text-transform: uppercase
+
+
+/*End of Single Item page*/
+
+.cart
+  margin-top: 70px
+
+  &__table
+    display: table
+    width: 100%
+    border-collapse: collapse
+    margin-bottom: 44px
+
+  &__tr
+    display: table-row
+
+  &__td
+    display: table-cell
+    text-align: center
+    border: none
+    vertical-align: middle
+    border-bottom: 1px solid #eaeaea
+    color: #656565
+    font-family: Lato
+    font-size: 13px
+    font-weight: 400
+    line-height: 20px
+
+    &_header-text
+      color: #222222
+      font-family: Lato
+      font-size: 13px
+      font-weight: 700
+      line-height: 20px
+      text-transform: uppercase
+      padding-top: 20px
+      padding-bottom: 20px
+
+    &_style
+      padding-top: 23px
+      padding-bottom: 23px
+
+    &_prod-det
+      display: flex
+
+    &_order-img
+      width: 100px
+      height: 115px
+      margin-right: 21px
+
+    &_order-details-h3
+      text-align: left
+      margin-bottom: 30px
+      color: #222222
+      font-family: Lato
+      font-size: 13px
+      font-weight: 400
+      text-transform: uppercase
+
+    &_order-details-p
+      font-size: 13px
+      line-height: 20px
+      color: #575757
+      font-family: "Lato - Regular"
+      font-weight: 400
+      text-align: left
+
+    &_order-details-span
+      color: #6f6e6e
+      font-size: 13px
+      line-height: 20px
+      font-family: "Lato Light"
+      font-weight: 300
+
+    &_cart-q
+      padding-top: 7px
+      padding-bottom: 7px
+      height: 15px
+      border: 1px solid #eaeaea
+      width: 54px
+      line-height: 15px
+      margin: 0 auto
+
+    &_ex
+      display: flex
+      align-items: center
+      justify-content: center
+
+  &__submit
+    display: flex
+    justify-content: space-between
+    margin-bottom: 63px
+
+    &_button
+      color: #4a4a4a
+      font-family: Lato
+      font-size: 14px
+      font-weight: 700
+      text-transform: uppercase
+      line-height: 20px
+      border: 1px solid #eaeaea
+      padding: 19px 38px
+
+  &__payment
+    display: flex
+    justify-content: space-between
+    margin-bottom: 79px
+
+  &__paym
+    width: 357px
+    min-height: 268px
+
+    &_h3
+      color: #222222
+      font-family: Lato
+      font-size: 16px
+      font-weight: 700
+      text-transform: uppercase
+
+    &_p
+      color: #000000
+      font-family: Lato
+      font-size: 14px
+      font-weight: 300
+      margin-top: 27px
+
+    &_form
+      position: relative
+
+      &-input
+        border: 1px solid #eaeaea
+        padding: 16px 18px
+        width: 318px
+        color: #b1b1b1
+        font-family: Lato
+        font-size: 13px
+        font-weight: 300
+        margin-top: 21px
+
+        &-marg
+          margin-top: 25px
+
+      &-arrow
+        position: absolute
+        right: 12px
+        top: 43px
+
+      &-button
+        width: fit-content
+        height: 15px
+        color: #4a4a4a
+        font-family: Lato
+        font-size: 11px
+        font-weight: 700
+        text-transform: uppercase
+        padding: 12px
+        border: 1px solid #eaeaea
+        line-height: 15px
+        display: block
+        margin-top: 23px
+
+    &_totals
+      background-color: #f5f3f3
+      padding: 42px
+
+      &-2
+        display: flex
+        flex-direction: column
+
+        &-flex
+          display: flex
+          justify-content: flex-end
+
+          &:last-of-type
+            border-bottom: 1px solid #e2e2e2
+
+        &-1
+          color: #4a4a4a
+          font-family: Lato
+          font-size: 11px
+          font-weight: 400
+          text-transform: uppercase
+          line-height: 11px
+          margin-left: 20px
+
+        &-2
+          color: #222222
+          font-family: Lato
+          font-size: 16px
+          line-height: 16px
+          font-weight: 700
+          text-transform: uppercase
+          margin-top: 15px
+          margin-bottom: 23px
+
+        &-3
+          color: $color-site
+          font-family: Lato
+          font-size: 16px
+          line-height: 16px
+          font-weight: 700
+          text-transform: uppercase
+          margin-top: 14px
+          margin-bottom: 22px
+          margin-left: 20px
+
+      &-button
+        background-color: $color-site
+        color: #ffffff
+        font-family: Lato
+        font-size: 16px
+        font-weight: 700
+        text-transform: uppercase
+        text-align: center
+        line-height: 16px
+        padding-top: 18px
+        padding-bottom: 18px
+        margin-top: 20px
+        display: block
+
+/*End of page Cart*/
+
+/*Page Shipping*/
+
+.shipping
+  padding-bottom: 93px
+
+  &__h2
+    color: #222222
+    font-family: Lato
+    font-size: 16px
+    line-height: 72px
+    font-weight: 700
+    text-transform: uppercase
+    border-bottom: 1px solid #e8e8e8
+
+    &:first-of-type
+      margin-top: 39px
+      border-bottom: none
+
+  &__address
+    display: flex
+
+    &_div
+      width: 50%
+      padding-bottom: 79px
+      border-bottom: 1px solid #e8e8e8
+
+      & p:first-of-type
+        margin-bottom: 20px
+
+      & p:nth-of-type(5)
+        margin-bottom: 16px
+        border-bottom: none
+
+    &_span
+      margin-right: 10px
+
+    &_main
+      padding-left: 35px
+
+      &-h3
+        color: #222222
+        font-family: Lato
+        font-size: 13px
+        line-height: 13px
+        font-weight: 400
+        text-transform: uppercase
+        margin-bottom: 12px
+
+      &-p
+        color: #b3b2b2
+        font-family: Lato
+        font-size: 13px
+        font-weight: 400
+        line-height: 13px
+
+        &:nth-of-type(2)
+          margin-bottom: 32px
+
+        &:nth-of-type(3)
+          margin-bottom: 12px
+
+        &:last-of-type
+          margin-bottom: 38px
+
+      &-pr
+        color: #ff0d0d
+        font-family: Lato
+        font-size: 13px
+        font-weight: 400
+        line-height: 13px
+
+      &-buttons
+        display: flex
+        margin-top: 30px
+        
+    &_label
+      color: #222222
+      font-family: Lato
+      font-size: 12px
+      line-height: 12px
+      font-weight: 400
+      text-transform: uppercase
+
+    &_input
+      margin-bottom: 13px
+
+    &_input:last-of-type
+      margin-bottom: 34px
+
+    &_button
+      border: 1px solid #eaeaea
+      color: #4a4a4a
+      display: block
+      font-family: Lato
+      font-size: 14px
+      line-height: 50px
+      font-weight: 700
+      text-transform: uppercase
+      text-align: center
+      height: 50px
+      width: 180px
+
+      &-p
+        color: #222222
+        font-family: Lato
+        display: block
+        font-size: 14px
+        line-height: 50px
+        font-weight: 400
+
+      &:nth-last-of-type(2)
+        margin-right: 30px
+
+    &_input-t
+      border: 1px solid #eaeaea
+      height: 45px
+      min-width: 390px
+      margin-bottom: 14px
+      margin-top: 9px
+
+      &:last-of-type
+        margin-bottom: 20px
+
+
+
+
