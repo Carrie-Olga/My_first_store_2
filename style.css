@@ -15,6 +15,7 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+/*Page Index*/
 .header {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
   border: 1px solid #ececec;
@@ -832,31 +833,28 @@ body {
   color: #f7f7f8;
 }
 
+/*End of page Index*/
+.new__arrivals {
+  background-color: #f8f3f4;
+  margin-bottom: 59px;
+}
 .new__arrivals_cont {
   display: flex;
   justify-content: space-between;
   line-height: 148px;
 }
-
-.new__arrivals {
-  background-color: #f8f3f4;
-  margin-bottom: 59px;
-}
-
 .new__arrivals_1 {
   color: #f16d7f;
   font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
 }
-
 .new__arrivals_2 {
   font-size: 14px;
   text-transform: uppercase;
   color: #636363;
   font-weight: 300;
 }
-
 .new__arrivals_3 {
   color: #f16d7f;
   font-size: 14px;

@@ -13,6 +13,8 @@ input
 body
   font-family: 'Lato', sans-serif
 
+/*Page Index*/
+
 .header
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.17)
   border: 1px solid #ececec
@@ -425,7 +427,6 @@ body
     line-height: 25px
     margin-bottom: 16px
 
-
 .box-product
   margin-top: 63px
   display: flex
@@ -479,7 +480,6 @@ body
     position: absolute
     top: 98px
     left: 70px
-
 
 .products__button
   justify-content: center
@@ -815,33 +815,35 @@ body
           background-color: $color-site
           color: #f7f7f8
 
-.new__arrivals_cont
-  display: flex
-  justify-content: space-between
-  line-height: 148px
+
+/*End of page Index*/
 
 .new__arrivals
   background-color: #f8f3f4
   margin-bottom: 59px
 
+  &_cont
+    display: flex
+    justify-content: space-between
+    line-height: 148px
 
-.new__arrivals_1
-  color: $color-site
-  font-size: 24px
-  font-weight: 400
-  text-transform: uppercase
+  &_1
+    color: $color-site
+    font-size: 24px
+    font-weight: 400
+    text-transform: uppercase
 
-.new__arrivals_2
-  font-size: 14px
-  text-transform: uppercase
-  color: #636363
-  font-weight: 300
+  &_2
+    font-size: 14px
+    text-transform: uppercase
+    color: #636363
+    font-weight: 300
 
-.new__arrivals_3
-  color: $color-site
-  font-size: 14px
-  font-weight: 700
-  text-transform: uppercase
+  &_3
+    color: $color-site
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
 
 .store__info
   background-color: #222224
