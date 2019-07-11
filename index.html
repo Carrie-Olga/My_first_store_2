@@ -6,8 +6,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/465fb3894d.js"></script>
-  </head>  
-   <body>
+</head>
+    <body>
     <header class="header">
         <div class="container header__content">
             <div class="header__block">
@@ -43,12 +43,12 @@
                                     <li><a href="#" class="drop__link">Jackets/vests</a></li>
                                 </ul>
                             </div>
-                </div>
+                        </div>
                     </div>
                     <div class="form__search">
-                        <input class="form__search_input" type="text" placeholder="Search for item..."><div class="form__search_button">0</div>
+                        <label for="search"></label>
+                        <input class="form__search_input" type="text" placeholder="Search for item..." id="search"><div class="form__search_button">0</div>
                     </div>
-                    
                 </form>
             </div>
             <div class="header__block">
@@ -576,10 +576,8 @@
               <div class="subscribe__item_text">
                <blockquote class="subscribe__quote">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, 
                 a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</blockquote>
-               <cite>
-                   <p class="subscribe__p1"><span class="subscribe__span">Bin Burhan</span></p>
+                    <cite class="subscribe__p1"><span class="subscribe__span">Bin Burhan</span></cite>
                     <p class="subscribe__p">Dhaka, Bd</p>
-               </cite>
                <div class="subscribe__lines">
                    <img src="img/Rectangle_22.svg" alt="" class="subscribe__lines_form">
                    <img src="img/Rectangle_22_red.svg" alt="" class="subscribe__lines_form">
@@ -592,9 +590,11 @@
                <div class="subscribe__form">
                     <h4 class="subscribe__header">Subscribe</h4>
                     <p class="subscribe__header_text">FOR OUR NEWLETTER AND PROMOTION</p>
-                    <form action="#" method="put" class="subscribe__submit">
-                        <input type="email" class="subscribe__email" placeholder="      Enter Your Email">
-                        <input type="submit" class="subscribe__submit_button" value="Subscribe">
+                    <form action="#" method="get" class="subscribe__submit">
+                        <label for="email"></label>
+                        <input type="email" class="subscribe__email" id="email" placeholder="      Enter Your Email">
+                        <label for="submit"></label>
+                        <input type="submit" class="subscribe__submit_button" id="submit" value="Subscribe">
                     </form>
                 </div>
             </div>
