@@ -918,6 +918,9 @@ body
     font-weight: 700
     text-transform: uppercase
 
+  &_single
+    margin-bottom: 0
+
 .store__info
   background-color: #222224
   height: 341px
@@ -1164,6 +1167,8 @@ body
 
 /* End of page Product*/
 
+/*Page Single Item*/
+
 .single__img
   height: 730px
   line-height: 730px
@@ -1172,151 +1177,130 @@ body
   display: flex
   align-items: center
 
-.new__arrivals_single
-  margin-bottom: 0
+  &_m
+    display: block
+    margin-left: auto
+    margin-right: auto
 
-.single__img_m
-  display: block
-  margin-left: auto
-  margin-right: auto
+  &_arrow
+    width: 47px
+    height: 47px
+    background-color: #cdcdcc
+    display: flex
+    align-items: center
+    justify-content: center
 
-.arrow
-  width: 47px
-  height: 47px
-  background-color: #cdcdcc
-  display: flex
-  align-items: center
-  justify-content: center
 
-.arrow_img
-  width: 8px
-  height: 14px
-  color: #ffffff
-  font-family: "Font Awesome"
-  font-size: -24px
-  font-weight: 400
-  line-height: -24px
-
-.single__item_details-cont
-  border: 1px solid #eaeaea
-  background-color: #ffffff
-  padding-top: 73px
-  padding-bottom: 122px
-  margin-bottom: 70px
-  position: absolute
-  left: 50%
-  margin-left: -33%
-  top: -50px
-
-.single__item_details
+.single
   position: relative
   background-color: #ffffff
   padding-top: 830px
 
-.single__h4
-  color: $color-site
-  font-family: Lato
-  font-size: 14px
-  font-weight: 700
-  line-height: 13px
-  text-transform: uppercase
+  &__cont
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    padding-top: 73px
+    padding-bottom: 122px
+    margin-bottom: 70px
+    position: absolute
+    left: 50%
+    margin-left: -33%
+    top: -50px
 
-.single__center
-  text-align: center
+  &__info
+    width: 622px
+    padding-left: 10px
+    padding-right: 10px
+    margin: 0 auto
 
-.single__slider
-  margin: 14px auto 17px
-  width: 147px
-  height: 1px
-  background-color:  #eaeaea
-  position: relative
+    &_h4
+      color: $color-site
+      font-family: Lato
+      font-size: 14px
+      font-weight: 700
+      line-height: 13px
+      text-transform: uppercase
 
-.single__slider_active
-  margin: 0 auto
-  width: 63px
-  height: 3px
-  background-color: #ef5b70
-  position: absolute
-  top: -1.5px
-  left: 43px
+    &_h3
+      color: #4d4d4d
+      font-family: "Lato - Black"
+      font-size: 18px
+      font-weight: 400
+      line-height: 14px
+      text-transform: uppercase
+      margin-bottom: 67px
 
-.h3
-  width: 254px
-  height: 14px
-  color: #4d4d4d
-  font-family: "Lato - Black"
-  font-size: 18px
-  font-weight: 400
-  line-height: 24px
-  text-transform: uppercase
+    &_center
+      text-align: center
 
-.single__h3
-  color: #4d4d4d
-  font-family: "Lato - Black"
-  font-size: 18px
-  font-weight: 400
-  line-height: 14px
-  text-transform: uppercase
-  margin-bottom: 67px
+    &_slider
+      margin: 14px auto 17px
+      width: 147px
+      height: 1px
+      background-color:  #eaeaea
+      position: relative
 
-.single__text
-  line-height: 30px
-  text-align: center
-  color: #5e5e5e
-  font-family: Lato
-  font-size: 14px
-  font-weight: 300
-  margin-bottom: 26px
+      &-active
+        margin: 0 auto
+        width: 63px
+        height: 3px
+        background-color: #ef5b70
+        position: absolute
+        top: -1.5px
+        left: 43px
 
-.single__item_details-info
-  width: 622px
-  padding-left: 10px
-  padding-right: 10px
-  margin: 0 auto
+    &_text
+      line-height: 30px
+      text-align: center
+      color: #5e5e5e
+      font-family: Lato
+      font-size: 14px
+      font-weight: 300
+      margin-bottom: 26px
 
-.single__material
-  height: 10px
-  display: flex
-  justify-content: space-around
-  margin-bottom: 37px
+    &_material
+      height: 10px
+      display: flex
+      justify-content: space-around
+      margin-bottom: 37px
 
-.single__material_h3
-  color: #b9b9b9
-  font-family: Lato
-  font-size: 14px
-  font-weight: 700
-  line-height: 10px
-  text-transform: uppercase
+      &-h3
+        color: #b9b9b9
+        font-family: Lato
+        font-size: 14px
+        font-weight: 700
+        line-height: 10px
+        text-transform: uppercase
 
-.single__material_span
-  font-family: Lato
-  font-size: 14px
-  font-weight: 700
-  text-transform: uppercase
-  color: #2f2f2f
+      &-span
+        font-family: Lato
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+        color: #2f2f2f
 
-.single__material_h2
-  color: #ef5b70
-  font-family: Lato
-  font-size: 24px
-  font-weight: 700
-  line-height: 24px
-  text-align: center
-  display: block
-  border-bottom: 1px solid #eaeaea
-  padding-bottom: 43px
-  margin-bottom: 63px
+    &_h2
+      color: #ef5b70
+      font-family: Lato
+      font-size: 24px
+      font-weight: 700
+      line-height: 24px
+      text-align: center
+      display: block
+      border-bottom: 1px solid #eaeaea
+      padding-bottom: 43px
+      margin-bottom: 63px
 
-.single__choose
-  display: flex
-  justify-content: space-around
-  width: 537px
-  margin: 0 auto
+    &_choose
+      display: flex
+      justify-content: space-around
+      width: 537px
+      margin: 0 auto
 
-.single__choose_box
-  width: 145px
-  height: 62px
-  position: relative
+      &-box
+        width: 145px
+        height: 62px
+        position: relative
 
 .single_choose
   color: #2f2f2f
