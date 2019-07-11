@@ -1615,21 +1615,12 @@ body {
   display: block;
 }
 
-.shipping__address_div {
-  width: 50%;
-  padding-bottom: 79px;
-  border-bottom: 1px solid #e8e8e8;
+/*End of page Cart*/
+/*Page Shipping*/
+.shipping {
+  padding-bottom: 93px;
 }
-
-.shipping__address_div p:first-of-type {
-  margin-bottom: 20px;
-}
-
-.shipping__address_div p:nth-of-type(5) {
-  margin-bottom: 16px;
-}
-
-.shipping__address_h2 {
+.shipping__h2 {
   color: #222222;
   font-family: Lato;
   font-size: 16px;
@@ -1638,13 +1629,32 @@ body {
   text-transform: uppercase;
   border-bottom: 1px solid #e8e8e8;
 }
-
-.container .shipping__address_h2:first-of-type {
+.shipping__h2:first-of-type {
   margin-top: 39px;
   border-bottom: none;
 }
-
-.shipping__address_h3 {
+.shipping__address {
+  display: flex;
+}
+.shipping__address_div {
+  width: 50%;
+  padding-bottom: 79px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.shipping__address_div p:first-of-type {
+  margin-bottom: 20px;
+}
+.shipping__address_div p:nth-of-type(5) {
+  margin-bottom: 16px;
+  border-bottom: none;
+}
+.shipping__address_span {
+  margin-right: 10px;
+}
+.shipping__address_main {
+  padding-left: 35px;
+}
+.shipping__address_main-h3 {
   color: #222222;
   font-family: Lato;
   font-size: 13px;
@@ -1653,15 +1663,47 @@ body {
   text-transform: uppercase;
   margin-bottom: 12px;
 }
-
-.shipping__address_p {
+.shipping__address_main-p {
   color: #b3b2b2;
   font-family: Lato;
   font-size: 13px;
   font-weight: 400;
   line-height: 13px;
 }
-
+.shipping__address_main-p:nth-of-type(2) {
+  margin-bottom: 32px;
+}
+.shipping__address_main-p:nth-of-type(3) {
+  margin-bottom: 12px;
+}
+.shipping__address_main-p:last-of-type {
+  margin-bottom: 38px;
+}
+.shipping__address_main-pr {
+  color: #ff0d0d;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 13px;
+}
+.shipping__address_main-buttons {
+  display: flex;
+  margin-top: 30px;
+}
+.shipping__address_label {
+  color: #222222;
+  font-family: Lato;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.shipping__address_input {
+  margin-bottom: 13px;
+}
+.shipping__address_input:last-of-type {
+  margin-bottom: 34px;
+}
 .shipping__address_button {
   border: 1px solid #eaeaea;
   color: #4a4a4a;
@@ -1675,80 +1717,6 @@ body {
   height: 50px;
   width: 180px;
 }
-
-.shipping__address_main .shipping__address_button:nth-last-of-type(2) {
-  margin-right: 30px;
-}
-
-.shipping__address_label {
-  color: #222222;
-  font-family: Lato;
-  font-size: 12px;
-  line-height: 12px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.shipping__address_input {
-  margin-bottom: 13px;
-}
-
-.shipping__address_main .shipping__address_input:last-of-type {
-  margin-bottom: 34px;
-}
-
-.shipping__address_main {
-  padding-left: 35px;
-}
-
-.shipping__address_main .shipping__address_p:nth-of-type(2) {
-  margin-bottom: 32px;
-}
-
-.shipping__address_main .shipping__address_p:nth-of-type(3) {
-  margin-bottom: 12px;
-}
-
-.shipping__address_main .shipping__address_p:last-of-type {
-  margin-bottom: 38px;
-}
-
-.shipping__address_span {
-  margin-right: 10px;
-}
-
-.shipping__address {
-  display: flex;
-}
-
-.shipping__address_input-t {
-  border: 1px solid #eaeaea;
-  height: 45px;
-  min-width: 390px;
-  margin-bottom: 14px;
-}
-
-.style {
-  width: 6px;
-  height: 6px;
-}
-
-.shipping__address_main-pr {
-  color: #ff0d0d;
-  font-family: Lato;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 13px;
-}
-
-.margin {
-  margin-top: 9px;
-}
-
-.shipping__address_main .margin:last-of-type {
-  margin-bottom: 20px;
-}
-
 .shipping__address_button-p {
   color: #222222;
   font-family: Lato;
@@ -1757,14 +1725,18 @@ body {
   line-height: 50px;
   font-weight: 400;
 }
-
-.shipping__address_main-buttons {
-  display: flex;
-  margin-top: 30px;
+.shipping__address_button:nth-last-of-type(2) {
+  margin-right: 30px;
 }
-
-.shipping {
-  padding-bottom: 93px;
+.shipping__address_input-t {
+  border: 1px solid #eaeaea;
+  height: 45px;
+  min-width: 390px;
+  margin-bottom: 14px;
+  margin-top: 9px;
+}
+.shipping__address_input-t:last-of-type {
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
