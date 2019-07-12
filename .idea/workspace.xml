@@ -31,11 +31,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.68930393">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="480">
-                  <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+                <state relative-caret-position="210">
+                  <caret line="14" column="99" selection-start-line="14" selection-start-column="99" selection-end-line="14" selection-end-column="99" />
                   <folding>
                     <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#form#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
@@ -43,11 +43,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/product.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="189">
-                  <caret line="438" column="190" lean-forward="true" selection-start-line="438" selection-start-column="85" selection-end-line="438" selection-end-column="190" />
+                <state relative-caret-position="265">
+                  <caret line="402" column="85" lean-forward="true" selection-start-line="402" selection-start-column="85" selection-end-line="402" selection-end-column="85" />
                 </state>
               </provider>
             </entry>
@@ -59,8 +59,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="433">
-                  <caret line="765" column="16" lean-forward="true" selection-start-line="765" selection-start-column="16" selection-end-line="765" selection-end-column="16" />
+                <state relative-caret-position="266">
+                  <caret line="982" column="21" selection-start-line="982" selection-start-column="21" selection-end-line="982" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -103,6 +103,7 @@
       <find>&amp;_1</find>
       <find>header</find>
       <find>brand</find>
+      <find>_header</find>
     </findStrings>
     <replaceStrings>
       <replace>$color-site</replace>
@@ -193,12 +194,12 @@
       <updated>1562795330911</updated>
       <workItem from="1562795332092" duration="35757000" />
       <workItem from="1562881083175" duration="1572000" />
-      <workItem from="1562919546552" duration="2863000" />
+      <workItem from="1562919546552" duration="3452000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42531000" />
+    <option name="totallyTimeSpent" value="43120000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -270,17 +271,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/product.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="438" column="190" lean-forward="true" selection-start-line="438" selection-start-column="85" selection-end-line="438" selection-end-column="190" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+        <state relative-caret-position="210">
+          <caret line="14" column="99" selection-start-line="14" selection-start-column="99" selection-end-line="14" selection-end-column="99" />
           <folding>
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#form#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -289,8 +283,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="765" column="16" lean-forward="true" selection-start-line="765" selection-start-column="16" selection-end-line="765" selection-end-column="16" />
+        <state relative-caret-position="266">
+          <caret line="982" column="21" selection-start-line="982" selection-start-column="21" selection-end-line="982" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="402" column="85" lean-forward="true" selection-start-line="402" selection-start-column="85" selection-end-line="402" selection-end-column="85" />
         </state>
       </provider>
     </entry>
