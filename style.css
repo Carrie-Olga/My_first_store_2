@@ -985,8 +985,8 @@ body {
 }
 .store__info_main-p-car {
   position: absolute;
-  top: 89px;
-  left: 135px;
+  top: 85px;
+  left: 124px;
 }
 
 .nav {
@@ -1030,6 +1030,9 @@ body {
 .nav__list {
   display: block;
 }
+.nav__list_hidden {
+  display: none;
+}
 .nav__list_ul {
   list-style-type: none;
 }
@@ -1059,9 +1062,8 @@ body {
   justify-content: space-between;
 }
 .product__select_details-w {
-  width: 248px;
+  width: 263px;
   padding-right: 15px;
-  padding-bottom: 5px;
 }
 .product__select_details-w:last-of-type {
   padding-right: 0;
@@ -1084,7 +1086,7 @@ body {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 37px;
+  line-height: 30px;
   margin-bottom: 10px;
 }
 .product__select_details-selector {
@@ -1122,7 +1124,7 @@ body {
 .product__select_sort {
   background-color: #f3f3f3;
   height: 31px;
-  margin-top: 25px;
+  margin-top: 16px;
   padding: 10px;
   color: #6f6e6e;
   font-size: 14px;
