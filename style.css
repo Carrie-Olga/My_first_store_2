@@ -612,7 +612,6 @@ body {
 }
 
 .products__button {
-  justify-content: center;
   margin-bottom: 113px;
   margin-top: 20px;
 }
@@ -627,6 +626,7 @@ body {
   padding-right: 25px;
   padding-left: 25px;
   line-height: 48px;
+  margin: 0 auto;
 }
 
 .options {
@@ -1243,6 +1243,11 @@ body {
   padding: 12px 46px;
 }
 
+.button_w:hover .button_w-h1 {
+  color: #f16d7f;
+  border-color: #f16d7f;
+}
+
 .button_w:hover .button_w-h {
   background-color: #f16d7f;
   color: #ffffff;
@@ -1437,22 +1442,24 @@ body {
   top: 45px;
 }
 .single__info_add-cart {
-  height: 25px;
-  width: 537px;
+  height: 55px;
+  width: 505px;
   margin: 28px auto 0;
-  padding-top: 15px;
-  padding-bottom: 15px;
   text-align: center;
-  line-height: 25px;
+  line-height: 55px;
   vertical-align: middle;
   border: 1px solid #ef5b70;
   color: #ef5b70;
   font-family: Lato;
   font-size: 16px;
   font-weight: 700;
+  position: relative;
 }
 .single__info_red-cart {
   margin-right: 15px;
+  position: absolute;
+  left: 170px;
+  top: 15px;
 }
 .single__also {
   display: flex;
@@ -1614,6 +1621,7 @@ body {
   font-size: 13px;
   font-weight: 300;
   margin-top: 21px;
+  outline: none;
 }
 .cart__paym_form-input-marg {
   margin-top: 25px;
@@ -1759,7 +1767,7 @@ body {
   margin-bottom: 12px;
 }
 .shipping__address_main-p:last-of-type {
-  margin-bottom: 38px;
+  margin-bottom: 35px;
 }
 .shipping__address_main-pr {
   color: #ff0d0d;
@@ -1780,19 +1788,25 @@ body {
   font-weight: 400;
   text-transform: uppercase;
 }
+.shipping__address_label-span {
+  color: #f16d7f;
+  font-size: 16px;
+}
 .shipping__address_input {
   margin-bottom: 13px;
 }
 .shipping__address_input-t {
   border: 1px solid #eaeaea;
   height: 45px;
-  min-width: 390px;
+  width: 350px;
   margin-bottom: 14px;
   margin-top: 9px;
   outline: none;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 .shipping__address_input-t:last-of-type {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .shipping__address_input:last-of-type {
   margin-bottom: 34px;
@@ -1809,6 +1823,7 @@ body {
   text-align: center;
   height: 50px;
   width: 180px;
+  margin-right: 20px;
 }
 .shipping__address_button-p {
   color: #222222;

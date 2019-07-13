@@ -597,7 +597,6 @@ body
 
 
 .products__button
-  justify-content: center
   margin-bottom: 113px
   margin-top: 20px
 
@@ -611,6 +610,7 @@ body
   padding-right: 25px
   padding-left: 25px
   line-height: 48px
+  margin: 0 auto
 
 .options
   display: flex
@@ -1223,6 +1223,10 @@ body
       padding: 12px 46px
 
 
+.button_w:hover .button_w-h1
+  color: $color-site
+  border-color: $color-site
+
 .button_w:hover .button_w-h
   background-color: $color-site
   color: #ffffff
@@ -1415,22 +1419,24 @@ body
         top: 45px
 
     &_add-cart
-      height: 25px
-      width: 537px
+      height: 55px
+      width: 505px
       margin: 28px auto 0
-      padding-top: 15px
-      padding-bottom: 15px
       text-align: center
-      line-height: 25px
+      line-height: 55px
       vertical-align: middle
       border: 1px solid #ef5b70
       color: #ef5b70
       font-family: Lato
       font-size: 16px
       font-weight: 700
+      position: relative
 
     &_red-cart
       margin-right: 15px
+      position: absolute
+      left: 170px
+      top: 15px
 
   &__also
     display: flex
@@ -1593,6 +1599,7 @@ body
         font-size: 13px
         font-weight: 300
         margin-top: 21px
+        outline: none
 
         &-marg
           margin-top: 25px
@@ -1739,7 +1746,7 @@ body
           margin-bottom: 12px
 
         &:last-of-type
-          margin-bottom: 38px
+          margin-bottom: 35px
 
       &-pr
         color: #ff0d0d
@@ -1760,19 +1767,25 @@ body
       font-weight: 400
       text-transform: uppercase
 
+      &-span
+        color: $color-site
+        font-size: 16px
+
     &_input
       margin-bottom: 13px
 
       &-t
         border: 1px solid #eaeaea
         height: 45px
-        min-width: 390px
+        width: 350px
         margin-bottom: 14px
         margin-top: 9px
         outline: none
+        padding-right: 20px
+        padding-left: 20px
 
         &:last-of-type
-          margin-bottom: 20px
+          margin-bottom: 15px
 
     &_input:last-of-type
       margin-bottom: 34px
@@ -1789,6 +1802,7 @@ body
       text-align: center
       height: 50px
       width: 180px
+      margin-right: 20px
 
       &-p
         color: #222222
