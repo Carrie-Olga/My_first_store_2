@@ -35,7 +35,15 @@ body
     margin-right: 26px
     position: absolute
     top: 40px
-    left: -55px
+    left: -5px
+
+    &_hover
+      display: flex
+      height: 100%
+      align-items: center
+
+      &:hover .drop_cart
+        display: block
 
 .container
   width: 1140px
@@ -88,6 +96,8 @@ body
     &_input
       width: 100%
       padding-left: 16px
+      outline: none
+      padding-right: 16px
 
     &_button
       padding-right: 11px
@@ -132,9 +142,26 @@ body
   font-weight: 400
   letter-spacing: 0.38px
   height: 38px
-  padding-right: 19px
+  padding-right: 32px
   padding-left: 19px
   line-height: 38px
+  -webkit-transition: transform 0.5s
+  -moz-transition: transform 0.5s
+  -ms-transition: transform 0.5s
+  -o-transition: transform 0.5s
+  transition: transform 0.5s
+
+  &__tr
+    position: absolute
+    top: 47px
+    right: 12px
+
+  &:hover
+    -webkit-transform: scale(1.05)
+    -moz-transform: scale(1.05)
+    -ms-transform: scale(1.05)
+    -o-transform: scale(1.05)
+    transform: scale(1.05)
 
 .menu
   display: flex
@@ -194,6 +221,9 @@ body
     list-style-type: none
     padding-left: 5px
     line-height: 30px
+
+    & li:hover .drop__link
+      color: $color-site
 
   &__link
     text-decoration: none
@@ -255,16 +285,16 @@ body
     &:last-of-type
       margin-bottom: 19px
 
+    & a
+      color: #222222
+      font-family: Lato
+      font-size: 12px
+      font-weight: 700
+      text-transform: uppercase
+
   &__flex_img
     margin-top: 12px
 
-.header__cart_hover
-  display: flex
-  height: 100%
-  align-items: center
-
-  &:hover .drop_cart
-    display: block
 
 
 .cart__item
