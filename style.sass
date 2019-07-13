@@ -954,17 +954,24 @@ body
     font-size: 24px
     font-weight: 400
     text-transform: uppercase
-    transition: all 3s
-    transition-timing: ease-in-out
+    transition: all 0.5s
 
     &:hover
-      transform: rotate(180deg)
+      transform: scale(1.1)
 
   &_2
     font-size: 14px
     text-transform: uppercase
     color: #636363
     font-weight: 300
+
+    & a
+      color: #636363
+      font-family: Lato
+      font-size: 14px
+      font-weight: 300
+      line-height: 20px
+      text-transform: uppercase
 
   &_3
     color: $color-site
@@ -1048,6 +1055,9 @@ body
         padding-left: 17px
         line-height: 33px
 
+        &:hover .nav__list_ul-li-a
+          color: $color-site
+
         &-a
           color: #6f6e6e
           font-size: 14px
@@ -1119,6 +1129,9 @@ body
     text-transform: uppercase
     display: flex
     flex-wrap: wrap
+
+    & td
+      width: 25%
 
     &-form
       margin-left: 20px
@@ -1208,6 +1221,11 @@ body
       font-size: 16px
       font-weight: bold
       padding: 12px 46px
+
+
+.button_w:hover .button_w-h
+  background-color: $color-site
+  color: #ffffff
 
 .active_li
   color: #ef5b70
@@ -1502,13 +1520,19 @@ body
       font-weight: 300
 
     &_cart-q
-      padding-top: 7px
-      padding-bottom: 7px
+      padding: 9px 5px 9px 15px
+      text-align: center
       height: 15px
       border: 1px solid #eaeaea
-      width: 54px
+      width: 34px
       line-height: 15px
       margin: 0 auto
+      outline: none
+      color: #656565
+      font-family: Lato
+      font-size: 13px
+      font-weight: 400
+      line-height: 20px
 
     &_ex
       display: flex
@@ -1529,6 +1553,10 @@ body
       line-height: 20px
       border: 1px solid #eaeaea
       padding: 19px 38px
+
+    &_buttons
+      display: flex
+      justify-content: space-between
 
   &__payment
     display: flex
@@ -1735,6 +1763,17 @@ body
     &_input
       margin-bottom: 13px
 
+      &-t
+        border: 1px solid #eaeaea
+        height: 45px
+        min-width: 390px
+        margin-bottom: 14px
+        margin-top: 9px
+        outline: none
+
+        &:last-of-type
+          margin-bottom: 20px
+
     &_input:last-of-type
       margin-bottom: 34px
 
@@ -1762,15 +1801,7 @@ body
       &:nth-last-of-type(2)
         margin-right: 30px
 
-    &_input-t
-      border: 1px solid #eaeaea
-      height: 45px
-      min-width: 390px
-      margin-bottom: 14px
-      margin-top: 9px
 
-      &:last-of-type
-        margin-bottom: 20px
 
 
 
