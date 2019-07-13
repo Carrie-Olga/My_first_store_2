@@ -145,23 +145,11 @@ body
   padding-right: 32px
   padding-left: 19px
   line-height: 38px
-  -webkit-transition: transform 0.5s
-  -moz-transition: transform 0.5s
-  -ms-transition: transform 0.5s
-  -o-transition: transform 0.5s
-  transition: transform 0.5s
 
   &__tr
     position: absolute
     top: 47px
     right: 12px
-
-  &:hover
-    -webkit-transform: scale(1.05)
-    -moz-transform: scale(1.05)
-    -ms-transform: scale(1.05)
-    -o-transform: scale(1.05)
-    transform: scale(1.05)
 
 .menu
   display: flex
@@ -433,12 +421,16 @@ body
     &_mini_2
       background-image: url(img/offer3.jpg)
 
+    &:hover .offer__text
+      margin-left: 26px
+
   &__text
     background-color: #ffffff
     padding: 16px 20px
     border: 1px solid #e6e6e6
     display: inline-block
     margin-top: 26px
+    transition: all 0.5s
 
     &_h5
       color: #222222
@@ -482,6 +474,7 @@ body
   width: 263px
   margin-bottom: 43px
   position: relative
+  transition: all 0.5s
 
   &:hover .product__add
     display: block
@@ -513,6 +506,7 @@ body
   &__img
     width: 100%
     height: 280px
+    transition: all 0.5s
 
     &_p
       line-height: 39px
@@ -792,17 +786,22 @@ body
       letter-spacing: 0.35px
       right: 93px
       top: 225px
+      outline: none
 
   &__email
     height: 46px
     line-height: 46px
     width: 380px
+    box-sizing: border-box
     border-radius: 23px
     background-color: #e1e1e1
     color: #222224
     font-size: 14px
     font-weight: 400
     letter-spacing: 0.35px
+    outline: none
+    padding-left: 25px
+    padding-right: 125px
 
 .footer
   min-height: 400px
