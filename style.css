@@ -1294,19 +1294,14 @@ body {
 
 .single {
   position: relative;
-  background-color: #ffffff;
-  padding-top: 830px;
 }
 .single__cont {
   border: 1px solid #eaeaea;
   background-color: #ffffff;
   padding-top: 73px;
   padding-bottom: 122px;
-  margin-bottom: 70px;
-  position: absolute;
-  left: 50%;
-  margin-left: -33%;
-  top: -50px;
+  margin-bottom: 120px;
+  margin-top: -50px;
 }
 .single__info {
   width: 622px;
